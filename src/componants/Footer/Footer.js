@@ -4,6 +4,7 @@ import {FiFacebook , FiTwitter , FiInstagram , FiGithub} from "react-icons/fi";
 
 function Footer() {
     return (
+        <div className="foot">
         <div className="Footer">
             <p> all copy right are resarved </p>
             <p>contact us on Social media:</p>
@@ -17,6 +18,7 @@ function Footer() {
                 </li>
 
             </ul>
+        </div>
         </div>
 
     )

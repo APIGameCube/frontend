@@ -8,23 +8,21 @@ import '../Header/Header.css'
 function Header() {
     return (
         <div className='navbar'>
-            <Navbar bg="dark" variant="dark" className='allnav'>
-                <Container className='nav'>
-                    <Nav className="me-auto">
-                        <Link to="/" className="navbar">Home</Link>
-                        <Link to="/music" className='navbar'>Music</Link>
-                        <Link to="/Playlist" className="navbar">Playlist</Link>
 
-                    </Nav>
-                    <section className='showcase'>
-                        <Navbar.Brand className='title' href="/" >musicly</Navbar.Brand>
-                    </section>
-                        <Link to="/AboutUs" className="navbar">About us</Link>
-                        <Link to="/Login" className="navbar">sign in</Link>
+            <Link to="/" className="navpage">Home</Link>
+            <Link to="/music" className='navpage'>Music</Link>
+            <Link to="/Playlist" className="navpage">Playlist</Link>
+
+            <img src='https://mir-s3-cdn-cf.behance.net/project_modules/1400/6d030677220237.5c9fc36f0ed8f.jpg' className='navimg'></img>
+            {/* <section className='showcase'>
+                        <navpage.Brand className='title' href="/" >musicly</navpage.Brand>
+                    </section> */}
+            <Link to="/AboutUs" className="navpage">About us</Link>
+            <Link to="/Login" className="navpage">Sign In</Link>
 
 
-                </Container>
-            </Navbar>
+
+
         </div>
     )
 }
