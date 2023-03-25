@@ -1,17 +1,44 @@
-.first {
+.banner1 {
     height: 600px;
-    margin: 10px;
-    background-image: url(https://img.freepik.com/free-vector/glowing-musical-pentagram-background-with-sound-notes_1017-31220.jpg);
-    border-radius: 30px;
-    background-size: contain;
-}
-.first2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 600px;
-    font-size: 35px;
-    color: white;
+    margin: 10px;
+    background-image: url(https://img.freepik.com/free-vector/glowing-musical-pentagram-background-with-sound-notes_1017-31220.jpg?w=1060&t=st=1679688511~exp=1679689111~hmac=d15257ac43844a592206e3d7e9da135dfdefaea36c29141b2c163bc13d200520);
     border-radius: 30px;
-    background: rgba(0, 0, 0, 0.568);
+    color: white;
+    font-size: 35px;
+    background-size: contain;
+}
+
+
+.btn {
+    width: 160px;
+    align-self: center;
+}
+
+.banner2 {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    background-image: url(https://img.freepik.com/free-vector/colorful-equalizer-wave-background_23-2148435448.jpg?w=996&t=st=1679688775~exp=1679689375~hmac=6340901a428e655f8ca615375805dbb956a292bf8d57080afbcfb4624f3e94b7);
+    border-radius: 30px;
+    color: white;
+    font-size: 35px;
+    background-size: contain;
+}
+
+.banner3 {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    background-image: url(https://www.firstresort.ae/wp-content/uploads/2022/05/contact-US.jpg);
+    border-radius: 30px;
+    color: white;
+    font-size: 35px;
+    background-size: contain;
 }
