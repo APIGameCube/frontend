@@ -2,6 +2,7 @@ import TextField from "@mui/material/TextField";
 import './AllMusic.css'
 
 function AllMusic() {
+  
   return (
     <div className="main">
 
@@ -11,6 +12,7 @@ function AllMusic() {
           variant="outlined"
           fullWidth
           label="Search"
+          //...
         />
       </div>
       {/* <List /> */}
