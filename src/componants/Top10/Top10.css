@@ -1,0 +1,8 @@
+.lister-item.mode-detail {
+    margin-bottom: 3px;
+    /* padding: 10px 10px 20px; */
+    margin: 10px 10px 20px;
+    display: flex;
+    border: solid;
+    text-align: start;
+}

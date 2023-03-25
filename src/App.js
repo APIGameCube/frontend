@@ -1,4 +1,3 @@
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './componants/Header/Header';
 import Footer from './componants/Footer/Footer';
@@ -8,6 +7,9 @@ import Music from './componants/Music/Music';
 import PlayList from './componants/PlayList/PlayList';
 import AboutUs from './componants/AboutUs/AboutUs';
 import Login from './componants/Login/Login';
+import Top10 from './componants/Top10/Top10'
+import AllMusic from './componants/AllMusic/AllMusic'
+import './App.css';
 
 
 function App() {
@@ -16,17 +18,17 @@ function App() {
       <Header />
 
       <Routes>
-
         <Route path='/' element={<Home />}></Route>
         <Route path='/Music' element={<Music />}></Route>
         <Route path='/PlayList' element={<PlayList />}></Route>
         <Route path='/AboutUs' element={<AboutUs />}></Route>
         <Route path='/Login' element={<Login />}></Route>
-
+        <Route path='/Top10' element={<Top10 />}></Route>
+        <Route path='/AllMusic' element={<AllMusic />}></Route>
       </Routes>
 
       <Footer />
-      
+
     </div>
   );
 }
