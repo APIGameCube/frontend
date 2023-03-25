@@ -12,13 +12,13 @@
     font-size: 50px;
     color: #efff;
     mix-blend-mode: multiply;
-
 }
 
 .navbar {
     /* background-image: url(https://img.freepik.com/free-vector/abstract-music-notes-design-music-background_206725-621.jpg); */
     justify-content: space-around;
     background-color: #13254e;
+    
 }
 
 .navimg {
@@ -35,6 +35,5 @@
     border-radius: 20px;
     border: 3px solid #0000001f;
     transition: .4s all ease;
-    text-decoration: none;
 
 }
