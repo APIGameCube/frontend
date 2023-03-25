@@ -5,7 +5,6 @@ import "../Home/Home.css"
 
 function Home() {
   return (
-
     <>
       <div className='banner1'>
         <p>sign up for free and get to add your favorite lists and your favorite music on it</p>
