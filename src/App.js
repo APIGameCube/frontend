@@ -19,8 +19,8 @@ function App() {
 
       <Routes>
         <Route path='/' element={<Home />}></Route>
-        <Route path='/Music' element={<Music />}></Route>
-        <Route path='/PlayList' element={<PlayList />}></Route>
+        <Route path='/Games' element={<Music />}></Route>
+        <Route path='/Favorite' element={<PlayList />}></Route>
         <Route path='/AboutUs' element={<AboutUs />}></Route>
         <Route path='/Login' element={<Login />}></Route>
         <Route path='/Top10' element={<Top10 />}></Route>
