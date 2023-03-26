@@ -10,10 +10,10 @@ function Header() {
         <div className='navbar'>
 
             <Link to="/" className="navpage">Home</Link>
-            <Link to="/music" className='navpage'>Music</Link>
-            <Link to="/Playlist" className="navpage">Playlist</Link>
+            <Link to="/Games" className='navpage'>Games</Link>
+            <Link to="/Favorite" className="navpage">favotite games</Link>
 
-            <img src='https://mir-s3-cdn-cf.behance.net/project_modules/1400/6d030677220237.5c9fc36f0ed8f.jpg' className='navimg'></img>
+            <img src='https://i.pinimg.com/736x/23/bc/7f/23bc7f8945a1737ec2abcc2c3dc80095.jpg' className='navimg'></img>
             {/* <section className='showcase'>
                         <navpage.Brand className='title' href="/" >musicly</navpage.Brand>
                     </section> */}

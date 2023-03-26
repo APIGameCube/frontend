@@ -4,11 +4,13 @@
     flex-direction: column;
     justify-content: center;
     margin: 10px;
-    background-image: url(https://img.freepik.com/free-vector/glowing-musical-pentagram-background-with-sound-notes_1017-31220.jpg?w=1060&t=st=1679688511~exp=1679689111~hmac=d15257ac43844a592206e3d7e9da135dfdefaea36c29141b2c163bc13d200520);
+    background-image: url(https://wallpapercave.com/wp/wp5637724.jpg);
     border-radius: 30px;
     color: white;
     font-size: 35px;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    gap : 30px;
 }
 
 
@@ -23,11 +25,14 @@
     flex-direction: column;
     justify-content: center;
     margin: 10px;
-    background-image: url(https://img.freepik.com/free-vector/colorful-equalizer-wave-background_23-2148435448.jpg?w=996&t=st=1679688775~exp=1679689375~hmac=6340901a428e655f8ca615375805dbb956a292bf8d57080afbcfb4624f3e94b7);
+    background-image: url(https://preview.redd.it/z6mcavlsnka41.jpg?auto=webp&s=a9bd5107b7cfe7f76e5d0a1c17943b364bf092be);
     border-radius: 30px;
     color: white;
     font-size: 35px;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    gap : 30px;
+
 }
 
 .banner3 {
@@ -36,9 +41,24 @@
     flex-direction: column;
     justify-content: center;
     margin: 10px;
-    background-image: url(https://www.firstresort.ae/wp-content/uploads/2022/05/contact-US.jpg);
+    background-image: url(https://wallpapers.com/images/featured/nepi2tnxp6g0mvz9.jpg);
     border-radius: 30px;
     color: white;
     font-size: 35px;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    gap : 30px;
+
+}
+
+.hometext {
+        display: block;
+    line-height: 32px;
+    padding: 20px 20px;
+    background-color: #1a303c;
+    font-weight: 700;
+    border-radius: 20px;
+    align-self: center;
+    border: 3px solid #0000001f;
+    transition: .4s all ease;
 }
