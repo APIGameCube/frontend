@@ -9,7 +9,7 @@ function MohannadCard() {
       <div>
         <div className="card">
           <div className="card__image-container">
-            <img className="card__image" src="https://ca.slack-edge.com/TNGRRLUMA-U04L1GSNEDC-473f93a1a84a-512"></img>
+            <img className="card__image" src="https://ca.slack-edge.com/TNGRRLUMA-U04L1GSNEDC-473f93a1a84a-512" alt="gg"></img>
           </div>
 
           <svg className="card__svg" viewBox="0 0 800 500">

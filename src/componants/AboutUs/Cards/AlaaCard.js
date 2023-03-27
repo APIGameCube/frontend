@@ -9,7 +9,7 @@ function AlaaCard() {
       <div>
         <div className="card">
           <div className="card__image-container">
-            <img className="card__image" src="https://i.pinimg.com/736x/19/e8/03/19e8036f1558ed39cc91add60b0f6c3e.jpg"></img>
+            <img className="card__image" src="https://i.pinimg.com/736x/19/e8/03/19e8036f1558ed39cc91add60b0f6c3e.jpg" alt="gg"></img>
           </div>
 
           <svg className="card__svg" viewBox="0 0 800 500">

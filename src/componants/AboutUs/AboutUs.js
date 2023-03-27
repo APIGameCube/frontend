@@ -1,22 +1,28 @@
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+
 import "../AboutUs/AboutUs.css"
 import NawrsCard from './Cards/NawrsCard';
 import ShahinCard from './Cards/ShahinCard';
 import RakanCard from './Cards/RakanCard';
 import MohannadCard from './Cards/MohannadCard';
 import AlaaCard from './Cards/AlaaCard';
-import Carousel from 'react-bootstrap/Carousel';
+
 
 
 function AboutUs() {
   return (
-    <>
+    <div className="About">
+
       <div className='wholeaboutus'>
         <div className='aboutusbanner'>
-          <h1 className='h1about'>About Us</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p className='paboutus'>Welcome to our gaming website!</p>
+          <h3 className='paboutus'>Welcome to our gaming website! We are a team of five passionate developers who have come together to create an exciting platform for gamers of all levels. Our website offers a diverse range of games, from classic favorites to the latest releases, all in one convenient location. We strive to provide a user-friendly interface that makes it easy for you to browse and discover new games, connect with other gamers, and engage in a fun and immersive gaming experience. We are constantly working to improve our website and add new features to enhance your gaming experience. Thank you for choosing our website as your go-to gaming destination!</h3>
+
+
         </div>
+        <br></br>
+        <br></br>
+        <br></br>
+
         <cards className="cards">
 
           <ShahinCard />
@@ -27,7 +33,7 @@ function AboutUs() {
 
         </cards>
       </div>
-    </>
+    </div>
   );
 }
 

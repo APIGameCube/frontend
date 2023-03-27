@@ -1,11 +1,12 @@
 .Footer {
     justify-content: space-around;
-    background-color: #1c425b;
+    background: rgb(5,5,52);
+background: linear-gradient(90deg, rgba(5,5,52,1) 0%, rgba(98,14,14,0.7613096263896184) 35%, rgba(3,31,36,1) 100%);
     width: 100%;
     display: flex;
     align-items: center;
-    height: 50px;
-   
+    height: 60px;
+   color: blue;
   
 }
 
@@ -19,6 +20,7 @@
     color: rgb(0, 0, 0);
 
 }
+
 .buttons{
     display: flex;
     gap: 30px;

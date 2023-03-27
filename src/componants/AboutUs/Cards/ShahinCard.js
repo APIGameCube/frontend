@@ -9,7 +9,7 @@ function ShahinCard() {
       <div>
         <div className="card">
           <div className="card__image-container">
-            <img className="card__image" src="https://pps.whatsapp.net/v/t61.24694-24/298883697_584382600086370_3667121077064123418_n.jpg?ccb=11-4&oh=01_AdRkdzwxQyF2_7QJGVCPb6UNvQeocRHiAP7aq7l6uAYq6Q&oe=642EC754"></img>
+            <img className="card__image" src="https://pps.whatsapp.net/v/t61.24694-24/298883697_584382600086370_3667121077064123418_n.jpg?ccb=11-4&oh=01_AdRkdzwxQyF2_7QJGVCPb6UNvQeocRHiAP7aq7l6uAYq6Q&oe=642EC754" alt="gg"></img>
           </div>
 
           <svg className="card__svg" viewBox="0 0 800 500">

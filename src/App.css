@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bungee+Shade&family=Marcellus+SC&family=Merienda:wght@600&family=Orbitron&family=Rye&family=Shrikhand&display=swap');
 
 .App {
   text-align: center;
-  font-family: 'Orbitron', sans-serif;
-  background-color: rgb(14, 16, 20);}
+  font-family: 'Bangers', cursive;
+  background-color: rgb(14, 16, 20);
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -34,6 +36,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

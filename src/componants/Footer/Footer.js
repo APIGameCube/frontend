@@ -1,6 +1,6 @@
 import React from "react";
 import '../Footer/Footer.css'
-import {FiFacebook , FiTwitter , FiInstagram , FiGithub} from "react-icons/fi";
+import { FiGithub } from "react-icons/fi";
 
 function Footer() {
     return (

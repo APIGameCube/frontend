@@ -1,3 +1,6 @@
+
+
+
 .aboutusbanner {
     height: 600px;
     display: flex;
@@ -6,13 +9,19 @@
     margin: 10px;
     background-image: url(https://media1.giphy.com/media/WPwD0gdWFsNRy8LA2P/giphy.gif?cid=ecf05e47p0b99ifqjypw8zz08m1k3e8g176bp78m6upyf1uu&rid=giphy.gif&ct=g);
     border-radius: 30px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 35px;
     background-size: cover;
     background-position: center;
     gap : 30px;
+
 }
 
+.paboutus{
+    align-self: center;
+    font-family: 'Bangers', cursive;
+
+}
 
 .h1about{
     color: aliceblue;
