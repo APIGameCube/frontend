@@ -1,42 +1,11 @@
-import { React } from "react";
-// import List from "./Components/List"
-import Carousel from 'react-bootstrap/Carousel';
-import { Link } from 'react-router-dom';
-import { TextField } from "@mui/material";
-// import { IconName } from "react-icons/md";
-import './Music.css';
 
-function Music() {
-  return (
-    <div className="main">
-      <div className="backgroundImg">
-        <nav className="navbar">
-          <Link to="/" className="link2">All Genres</Link>
-          <Link to="/favorite" className="link2">Shooter </Link>
-          <Link to="/favorite" className="link2">Racing </Link>
-          <Link to="/favorite" className="link2">Fighting </Link>
-          <Link to="/favorite" className="link2">MOBA </Link>
-          <Link to="/favorite" className="link2">MMORPG </Link>
-          <Link to="/favorite" className="link2">MMO </Link>
-          <Link to="/favorite" className="link2">Strategy </Link>
-          <Link to="/favorite" className="link2">Battle Royale</Link>
-          <div className="search">
-            <TextField
-              id="outlined-basic"
-              variant="outlined"
-              fullWidth
-              label=" Search"
-            />
-          </div>
-        </nav>
-        {/* <List /> */}
+import "../AboutUsBanner/Banner.css"
 
-        <div className="TOP10">
-          {/* <a href="/Top10" style={{ fontSize: '30px' }} className='titleMusic'>
-            TOP 10
-          </a> */}
+function Aboutusbanner() {
 
-          <Carousel variant="dark">
+    return (
+        <>
+           <Carousel variant="dark">
             <Carousel.Item>
               <img
                 className="d-block w-100"
@@ -73,12 +42,8 @@ function Music() {
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
-
-        </div>
-      </div>
-    </div >
-
-  );
+        </>
+    )
 }
 
-export default Music;
+export default Aboutusbanner;

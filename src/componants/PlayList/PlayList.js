@@ -1,10 +1,14 @@
+import "../PlayList/PlayList.css"
+import Carousel from 'react-bootstrap/Carousel';
+
+
+
 function PlayList() {
-    return (
-      <>
-      playlist test
-      </>
-    );
-  }
-  
-  export default PlayList;
-  
+  return (
+    <>
+       
+    </>
+  );
+}
+
+export default PlayList;

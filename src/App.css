@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Shrikhand&display=swap');
+
 .App {
   text-align: center;
-}
-
+  font-family: 'Orbitron', sans-serif;
+  background-color: rgb(14, 16, 20);}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
