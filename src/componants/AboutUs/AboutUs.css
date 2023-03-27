@@ -1,52 +1,60 @@
-.banner1 {
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 10px;
-    background-image: url(https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?cs=srgb&dl=pexels-pixabay-36717.jpg&fm=jpg);
-    border-radius: 30px;
-    color: white;
-    font-size: 35px;
-    background-size: cover;
-    background-position: center;
-    gap : 30px;
+.banner {
+  font-family: 'Alkatra', cursive;
+
+
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  background-image: url('https://i.pinimg.com/originals/9c/20/6a/9c206adf27785d171a35e8f58470bc0b.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  margin-left: 150px;
+  margin-right: 150px;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
 }
 
 .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: url('../img/23964.jpg');
+
 }
 
 .card {
-    width: 18rem;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  }
+  font-family: 'Alkatra', cursive;
+  margin: 75px;
+  background: none;
+  width: 18rem;
+  color: rgb(255, 255, 255);
+}
 
-  .image {
-    border-radius: 10px 10px 0 0;
-    border-radius: 50%;
-  }
+.image {
+  border-radius: 10px 10px 0 0;
+  border-radius: 50%;
+}
 
-  .cardTitle {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-  }
+.cardTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
 
-  .card-text {
-    margin-bottom: 1rem;
-  }
-  
-  .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-  }
-  
-  .btn-primary:hover {
-    background-color: #0069d9;
-    border-color: #0062cc;
-  }
+.card-text {
+  margin-bottom: 1rem;
+}
+
+.btn-primary {
+  background-color: #635fa0;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
