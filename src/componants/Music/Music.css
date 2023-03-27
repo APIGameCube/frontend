@@ -5,11 +5,10 @@
     /* align-items: center; */
     flex-direction: column;
     row-gap: 20px;
-    background-color: #000000f1;
 }
 .backgroundImg{
     background-image: url('../img/23964.jpg');
-
+    height: 580px;
 }
 h1 {
     margin: 10px;
@@ -91,4 +90,35 @@ nav.navbar {
     padding: 15px;
     opacity: 0.5;
     transition: opacity .15s ease;
+}
+.g-4.row.row-cols-md-4.row-cols-1 {
+    /* display: flex; */
+    /* align-content: space-around; */
+    padding: 30px;
+}
+
+button.BtnCard0.btn.btn-outline-secondary {
+    width: auto;
+}
+.card {
+    width: 18rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    background-color: rgb(0 0 0);
+}
+.card-title.h5 {
+    color: #d3d0d0;
+}
+button.BtnCard0.btn.btn-dark {
+    border-block-color: black;
+    background-color: black;
+    width: auto;
+}
+i.fab.fa-download {
+    color: #d3d0d0;
+
+}
+.BtnCard {
+    display: flex;
+    justify-content: space-between;
 }
