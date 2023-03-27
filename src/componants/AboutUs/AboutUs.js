@@ -5,17 +5,17 @@ import "../AboutUs/AboutUs.css"
 function AboutUs() {
   return (
     <>
-      <div className='banner1'>
-        <h1>About Us</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div className='banner'>
+        <h1 className='content'>About Us</h1>
+        <p className='content'>Welcome to our gaming website! We are a team of five passionate developers who have come together to create an exciting platform for gamers of all levels. Our website offers a diverse range of games, from classic favorites to the latest releases, all in one convenient location. We strive to provide a user-friendly interface that makes it easy for you to browse and discover new games, connect with other gamers, and engage in a fun and immersive gaming experience. We are constantly working to improve our website and add new features to enhance your gaming experience. Thank you for choosing our website as your go-to gaming destination!</p>
       </div>
       <cards className="cards">
         <Card className='card'>
-          <Card.Img className='image' src="https://files.slack.com/files-tmb/TNGRRLUMA-F050AH5FBNW-adabb2f492/081614cd-da5a-47ab-9cc7-7996f470fb34_720.jpg" />
+          <Card.Img className='image' src="blob:https://web.whatsapp.com/a0ed7c70-6e57-4e0c-9bb7-1c0841fcdec7" />
           <Card.Body>
             <Card.Title className='cardTitle'>Rakan Al-Madani</Card.Title>
             <Card.Text className='card-text'>
-              <p>Full-stack Web Developer</p>
+              <h5>Full-stack Web Developer</h5>
             </Card.Text>
             <Button className='btn-primary' href='https://www.linkedin.com/in/rakan-almadani-b77281179'>LinkedIn Profile</Button>
           </Card.Body>
@@ -26,7 +26,7 @@ function AboutUs() {
           <Card.Body>
             <Card.Title className='cardTitle'>Mohammed Shahin</Card.Title>
             <Card.Text className='card-text'>
-              <p>Full-stack Web Developer</p>
+              <h5>Full-stack Web Developer</h5>
             </Card.Text>
             <Button className='btn-primary' href='https://www.linkedin.com/in/mohammad-shahin-982875225'>LinkedIn Profile</Button>
           </Card.Body>
@@ -37,7 +37,7 @@ function AboutUs() {
           <Card.Body>
             <Card.Title className='cardTitle'>Mohannad Qasim</Card.Title>
             <Card.Text className='card-text'>
-              <p>Full-stack Web Developer</p>
+              <h5>Full-stack Web Developer</h5>
             </Card.Text>
             <Button className='btn-primary' href='https://www.linkedin.com/in/mohannad-qasim96/'>LinkedIn Profile</Button>
           </Card.Body>
@@ -48,18 +48,18 @@ function AboutUs() {
           <Card.Body>
             <Card.Title className='cardTitle'>Nawras Albibi</Card.Title>
             <Card.Text className='card-text'>
-              <p>Full-stack Web Developer</p>
+              <h5>Full-stack Web Developer</h5>
             </Card.Text>
             <Button className='btn-primary' href='https://www.linkedin.com/in/nawrs-bibi-935ba510a'>LinkedIn Profile</Button>
           </Card.Body>
         </Card>
 
         <Card className='card'>
-          <Card.Img className='image' src="https://pps.whatsapp.net/v/t61.24694-24/284990855_3104635743180107_5315448719391342225_n.jpg?ccb=11-4&oh=01_AdSEpsato42gV_4wp5a63VxOg4JsgNatPr7_WpBuWcLU0A&oe=642D4431" />
+          <Card.Img className='image' src="https://files.slack.com/files-tmb/TNGRRLUMA-F0510E6K6G0-cb18640eef/fb_img_1679841114743_720.jpg" />
           <Card.Body>
             <Card.Title className='cardTitle'>Ala'a Hmaidat</Card.Title>
             <Card.Text className='card-text'>
-              <p>Full-stack Web Developer</p>
+              <h5>Full-stack Web Developer</h5>
             </Card.Text>
             <Button className='btn-primary' href='https://www.linkedin.com/in/nawrs-bibi-935ba510a'>LinkedIn Profile</Button>
           </Card.Body>
