@@ -3,9 +3,11 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 import '../Header/Header.css'
-
+import { useAuth0 } from '@auth0/auth0-react';
 
 function Header() {
+    const { isAuthenticated, loginWithRedirect, logout, user } = useAuth0();
+
     return (
         <div className='navbar'>
 
@@ -18,7 +20,11 @@ function Header() {
                         <navpage.Brand className='title' href="/" >musicly</navpage.Brand>
                     </section> */}
             <Link to="/AboutUs" className="navpage">About us</Link>
-            <Link to="/Login" className="navpage">Sign In</Link>
+            {isAuthenticated ? (
+                <Link to="/Profile" className="navpage">{user.name}</Link>
+            ) : (
+                <Link to="/Login" className="navpage" onClick={() => loginWithRedirect()}>Sign In</Link>
+            )}
 
 
 
