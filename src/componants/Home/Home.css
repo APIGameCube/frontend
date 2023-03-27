@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     margin: 10px;
-    background-image: url(https://wallpapercave.com/wp/wp5637724.jpg);
+    background-image: url(https://thumbs.dreamstime.com/b/sci-fi-future-gaming-joystick-neon-laser-circles-glowing-purple-blue-concrete-tiled-floor-hexagone-synth-cyberpunk-epic-sci-fi-202617514.jpg);
     border-radius: 30px;
     color: white;
     font-size: 35px;
@@ -25,7 +25,7 @@
     flex-direction: column;
     justify-content: center;
     margin: 10px;
-    background-image: url(https://preview.redd.it/z6mcavlsnka41.jpg?auto=webp&s=a9bd5107b7cfe7f76e5d0a1c17943b364bf092be);
+    background-image: url(https://media.giphy.com/media/pjm7j91ASXjDpkEs6h/giphy.gif);
     border-radius: 30px;
     color: white;
     font-size: 35px;
@@ -55,8 +55,7 @@
         display: block;
     line-height: 32px;
     padding: 20px 20px;
-    background-color: #1a303c;
-    font-weight: 700;
+    background-color: #00000052;    font-weight: 700;
     border-radius: 20px;
     align-self: center;
     border: 3px solid #0000001f;

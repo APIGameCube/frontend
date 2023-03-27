@@ -3,12 +3,6 @@ import { React, useEffect, useState } from "react";
 import Carousel from 'react-bootstrap/Carousel';
 import { Link } from 'react-router-dom';
 import { TextField } from "@mui/material";
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import { FiFacebook, FiDownload, FiInstagram, FiGithub } from "react-icons/fi";
-
 // import { IconName } from "react-icons/md";
 import './Music.css';
 import { TextField } from "@mui/material";

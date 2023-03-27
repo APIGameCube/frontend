@@ -1,24 +1,39 @@
-.showcase {
-    width: 11%;
-    height: 10%;
-    position: relative;
-    background-color: #e90000;
+.navbar1 {
+    justify-content: space-between;
+    padding: 0 10px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgba(9,33,152,1) 0%, rgba(123,0,25,1) 100%);
 }
 
-.title {
-    width: 100%;
-    height: 100%;
-    background-color: #000000;
-    font-size: 50px;
-    color: #efff;
-    mix-blend-mode: multiply;
+.header1{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
 }
 
-.navbar {
-    /* background-image: url(https://img.freepik.com/free-vector/abstract-music-notes-design-music-background_206725-621.jpg); */
-    justify-content: space-around;
-    background-color: #13254e;
-    
+a:hover {
+    color: #ff0000;
+}
+
+.navpage {
+    display: block;
+    line-height: 32px;
+    padding: 0 20px;
+    font-weight: 700;
+    border-radius: 20px;
+    border: 3px solid #0000001f;
+    transition: .4s all ease;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Marcellus+SC&family=Merienda:wght@600&family=Orbitron&family=Rye&family=Shrikhand&display=swap');
+
+a {
+    color: #00b1fffc;
+    font-family: 'Merienda', cursive;    font-size: 20px;
+    text-decoration: double;
+
 }
 
 .navimg {

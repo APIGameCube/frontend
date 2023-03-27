@@ -1,10 +1,13 @@
+import "../PlayList/PlayList.css"
+
+
+
 function PlayList() {
-    return (
-      <>
-      playlist test
-      </>
-    );
-  }
-  
-  export default PlayList;
-  
+  return (
+    <>
+       
+    </>
+  );
+}
+
+export default PlayList;
