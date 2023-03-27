@@ -1,17 +1,35 @@
-import { React } from "react";
+import { React, useEffect, useState } from "react";
 // import List from "./Components/List"
 import Carousel from 'react-bootstrap/Carousel';
 import { Link } from 'react-router-dom';
 import { TextField } from "@mui/material";
 // import { IconName } from "react-icons/md";
 import './Music.css';
+import { TextField } from "@mui/material";
 
 function Music() {
+
+
+
+
+  const [gamesArr, setGamesArr] = useState([]);
+
+  const gamesComponentesReq = async () => {
+    const serverURL = `https://backend-black-nu.vercel.app/allGame`;
+    const resData = await fetch(serverURL);
+    const data = await resData.json();
+    setGamesArr(data)
+  }
+
+  useEffect(() => {
+    gamesComponentesReq();
+  }, [])
+
   return (
     <div className="main">
       <div className="backgroundImg">
         <nav className="navbar">
-          <Link to="/" className="link2">All Genres</Link>
+          <Link to="/Games" className="link2">All Genres</Link>
           <Link to="/favorite" className="link2">Shooter </Link>
           <Link to="/favorite" className="link2">Racing </Link>
           <Link to="/favorite" className="link2">Fighting </Link>
@@ -20,6 +38,7 @@ function Music() {
           <Link to="/favorite" className="link2">MMO </Link>
           <Link to="/favorite" className="link2">Strategy </Link>
           <Link to="/favorite" className="link2">Battle Royale</Link>
+
           <div className="search">
             <TextField
               id="outlined-basic"
@@ -75,6 +94,34 @@ function Music() {
           </Carousel>
 
         </div>
+
+        <Row xs={1} md={4} className="g-4">
+          {gamesArr.map((gameCard) => {
+            return <Col>
+              <div>
+                <Card style={{ width: '18rem' }} className="cards">
+                  <Card.Img variant="top" src={gameCard.thumbnail} />
+                  <Card.Body>
+                    <Card.Title>{gameCard.title}</Card.Title>
+                    <Card.Text>
+                    </Card.Text>
+
+                    <div className="BtnCard">
+                      <div className="BtnCardDown">
+                        <Button variant="dark" className="BtnCard0"><a href="https://github.com/Group04-Musicly" target="_blank" rel="noreferrer"><i className="fab fa-download"><FiDownload /></i></a></Button>
+                      </div>
+                      <div className="BtnCardinfo">
+                        <Button variant="outline-secondary" className="BtnCard0" >info</Button>{' '}
+                        <Button variant="outline-secondary" className="BtnCard0">🖤</Button>{' '}
+                      </div>
+                    </div>
+
+                  </Card.Body>
+                </Card>
+              </div>
+            </Col>
+          })}
+        </Row>
       </div>
     </div >
 

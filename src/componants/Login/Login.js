@@ -1,10 +1,15 @@
-function Login() {
+import { useAuth0 } from '@auth0/auth0-react';
+
+function Login (){
+    const { loginWithRedirect, isAuthenticated } = useAuth0();
+
     return (
-      <>
-      login test
-      </>
-    );
-  }
-  
-  export default Login;
-  
+        !isAuthenticated && (
+            <button onClick={() => loginWithRedirect()}>
+                Log In
+            </button>
+        )
+    )
+}
+
+export default Login

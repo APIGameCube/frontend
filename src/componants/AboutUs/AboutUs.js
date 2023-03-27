@@ -34,6 +34,7 @@ function AboutUs() {
         </cards>
       </div>
     </div>
+
   );
 }
 
