@@ -2,11 +2,15 @@
     display: flex;
     height: 100vh;
     width: 100%;
-    align-items: center;
+    /* align-items: center; */
     flex-direction: column;
     row-gap: 20px;
+    background-color: #000000f1;
 }
+.backgroundImg{
+    background-image: url('../img/23964.jpg');
 
+}
 h1 {
     margin: 10px;
     font-size: 40px;
@@ -16,8 +20,12 @@ h1 {
 .search {
     margin-top: 10px;
     width: 30%;
+    border-radius: 50px;
+    background-color: #fffffff1;
 }
-
+.MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-fullWidth.MuiInputBase-formControl.css-md26zr-MuiInputBase-root-MuiOutlinedInput-root {
+    border-radius: 50px;
+}
 a.titleMusic {
     font-size: 20px;
     text-decoration: none;
@@ -36,3 +44,51 @@ p {
     margin-right: 15px;
     vertical-align: top;
 } */
+a.link2 {
+    text-decoration: none;
+    color: var(--background);
+    padding: 10px;
+    color: white;
+}
+.TOP10{
+width: 700px;
+margin-left: 50px;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+nav.navbar {
+    background-color: var(--headerFooter);
+    color: var(--text);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: sticky;
+    top: -5px;
+    z-index: 2;
+    height: 90px;
+    min-height: 70px;
+    background-color: #00000061;
+    padding: 0 1rem;
+    box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 11%);
+}
+
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    /* padding: 10px; */
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 20%; */
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    /* border: solid 1px; */
+    /* color: white; */
+    padding: 15px;
+    opacity: 0.5;
+    transition: opacity .15s ease;
+}
