@@ -12,7 +12,6 @@ function AllMusic() {
           variant="outlined"
           fullWidth
           label="Search"
-          //...
         />
       </div>
       {/* <List /> */}
