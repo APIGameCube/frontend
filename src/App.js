@@ -9,7 +9,6 @@ import AboutUs from './componants/AboutUs/AboutUs';
 import Login from './componants/Login/Login';
 import Profile from './componants/Login/Profile';
 import Favorite from './componants/Favorite/Favorite'
-import AllMusic from './componants/AllMusic/AllMusic'
 
 import './App.css';
 
@@ -28,7 +27,6 @@ function App() {
         <Route path='/Login' element={<Login />}></Route>
         <Route path='/Profile' element={<Profile />}></Route>
         <Route path='/Favorite' element={<Favorite />}></Route>
-        <Route path='/AllMusic' element={<AllMusic />}></Route>
       </Routes>
 
       <Footer />

@@ -1,5 +1,18 @@
-.redirectingDiv{
-    border: 10px;
+.redirectingDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .redirectingDiv h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
     color: white;
-    
-}
+    background: radial-gradient(circle, rgba(9,33,152,1) 0%, rgba(123,0,25,1) 100%);
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
