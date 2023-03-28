@@ -7,6 +7,7 @@ import './Game.css'
 import { Col, Row, Card, Button } from "react-bootstrap";
 import { FiDownload } from "react-icons/fi";
 import { useAuth0 } from '@auth0/auth0-react';
+import Favorite from "../Favorite/Favorite";
 
 
 function Game() {
@@ -136,6 +137,7 @@ function Game() {
         })}
       </Row>
       <GameModal showFlag={showFlag} handleClose={handleClose} cardData={clickedCard} />
+      <Favorite showFlag={showFlag} handleClose={handleClose} cardData={clickedCard} />
 
     </div>
   );
