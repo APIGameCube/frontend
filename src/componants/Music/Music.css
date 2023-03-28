@@ -1,6 +1,6 @@
 .main {
     display: flex;
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     /* align-items: center; */
     flex-direction: column;
@@ -8,7 +8,11 @@
 }
 .backgroundImg{
     background-image: url('../img/23964.jpg');
-    height: 580px;
+    /* height: 580px; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* background-size: cover; */
+ background-repeat: no-repeat;
 }
 h1 {
     margin: 10px;
@@ -100,11 +104,36 @@ nav.navbar {
 button.BtnCard0.btn.btn-outline-secondary {
     width: auto;
 }
+
+/* .gamesimg{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12%;
+    margin-bottom: 20px;
+} */
 .card {
+    /* position: relative; */
+    /* background: #333; */
+    /* width: 300px; */
+    /* height: 75vh; */
+    /* border-radius: 6px; */
+    padding: 2rem;
+    color: #aaa;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
     width: 18rem;
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     background-color: rgb(0 0 0);
+}
+
+.gamesimg{
+    /* width: 150px; */
+    height: 150px;
+    /* object-fit: cover; */
+    /* border-radius: 50%; */
+    margin-bottom: 20px;
 }
 .card-title.h5 {
     color: #d3d0d0;

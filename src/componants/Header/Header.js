@@ -10,7 +10,7 @@ function Header() {
             <div className='header1'>
                 <Link to="/" className="navpage">Home</Link>
                 <Link to="/Games" className='navpage'>Games</Link>
-                <Link to="/Favorite" className="navpage">favotite games</Link>
+                <Link to="/Favorite" className="navpage">favorite games</Link>
             </div>
 
             <img src='https://d1csarkz8obe9u.cloudfront.net/posterpreviews/gamer-logo-design-template-9c1714f6bc3420bd27f18e7d7cd2452d_screen.jpg?ts=1637162711' alt='gg' className='navimg'></img>

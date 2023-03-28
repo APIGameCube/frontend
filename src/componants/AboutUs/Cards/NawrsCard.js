@@ -7,7 +7,7 @@ function NawrsCard() {
   return (
     <>
       <div>
-        <div className="card">
+        <div className="cardperson">
           <div className="card__image-container">
             <img className="card__image" src="https://pps.whatsapp.net/v/t61.24694-24/284990855_3104635743180107_5315448719391342225_n.jpg?ccb=11-4&oh=01_AdSEpsato42gV_4wp5a63VxOg4JsgNatPr7_WpBuWcLU0A&oe=642D4431" alt="gg"></img>
           </div>

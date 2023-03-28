@@ -23,7 +23,7 @@ function AboutUs() {
         <br></br>
         <br></br>
 
-        <cards className="cards">
+        <cards className="aboutuscards">
 
           <ShahinCard />
           <RakanCard />
