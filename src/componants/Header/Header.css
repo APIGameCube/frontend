@@ -4,7 +4,7 @@
     display: flex;
     align-content: center;
     align-items: center;
-    background: radial-gradient(circle, rgba(9,33,152,1) 0%, rgba(123,0,25,1) 100%);
+    background: radial-gradient(circle, rgb(14, 33, 128) 0%, rgba(123,0,25,1) 100%);
 }
 
 .header1{
@@ -14,7 +14,7 @@
 }
 
 a:hover {
-    color: #ff0000;
+    color: hwb(0 4% 96%);
 }
 
 .navpage {
@@ -30,7 +30,7 @@ a:hover {
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Marcellus+SC&family=Merienda:wght@600&family=Orbitron&family=Rye&family=Shrikhand&display=swap');
 
 a {
-    color: #00b1fffc;
+    color: white;
     font-family: 'Merienda', cursive;    font-size: 20px;
     text-decoration: double;
 
@@ -48,7 +48,7 @@ a {
     padding: 0 20px;
     font-weight: 700;
     border-radius: 20px;
-    border: 3px solid #0000001f;
+    border: 3px solid #000000;
     transition: .4s all ease;
     text-decoration: none;
 
