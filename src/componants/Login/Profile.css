@@ -6,7 +6,8 @@
     margin: 0 auto;
     max-width: 600px;
     padding: 20px;
-    background-color: #fff;
+    color: azure;
+    background: linear-gradient(90deg, rgba(0,0,255,1) 0%, rgba(153,33,33,0.7613096263896184) 0%, rgba(27,108,123,1) 100%);
     border-radius: 10px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 }
@@ -17,7 +18,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-img {
+.loginimg {
     width: 150px;
     height: 150px;
     object-fit: cover;

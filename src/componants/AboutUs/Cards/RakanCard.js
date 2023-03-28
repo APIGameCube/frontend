@@ -7,7 +7,7 @@ function RakanCard() {
   return (
     <>
       <div>
-        <div className="card">
+        <div className="cardperson">
           <div className="card__image-container">
             <img className="card__image" src="https://ca.slack-edge.com/TNGRRLUMA-U04L81L7QE7-9d2e1cf376c0-512" alt="gg"></img>
           </div>
