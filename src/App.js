@@ -8,8 +8,6 @@ import PlayList from './componants/PlayList/PlayList';
 import AboutUs from './componants/AboutUs/AboutUs';
 import Login from './componants/Login/Login';
 import Profile from './componants/Login/Profile';
-import Top10 from './componants/Top10/Top10'
-import AllMusic from './componants/AllMusic/AllMusic'
 import './App.css';
 
 
@@ -26,8 +24,6 @@ function App() {
         <Route path='/AboutUs' element={<AboutUs />}></Route>
         <Route path='/Login' element={<Login />}></Route>
         <Route path='/Profile' element={<Profile />}></Route>
-        <Route path='/Top10' element={<Top10 />}></Route>
-        <Route path='/AllMusic' element={<AllMusic />}></Route>
       </Routes>
 
       <Footer />
