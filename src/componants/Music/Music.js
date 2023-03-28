@@ -4,16 +4,12 @@ import Carousel from 'react-bootstrap/Carousel';
 import { Link } from 'react-router-dom';
 import { TextField } from "@mui/material";
 // import { IconName } from "react-icons/md";
-import './Music.css';
 import { Col, Row, Card, Button } from "react-bootstrap";
 import { FiDownload } from "react-icons/fi";
-
-
+import './Music.css';
+import ModalGames from "../ModalGames/ModalGames";
 
 function Music() {
-
-
-
 
   const [gamesArr, setGamesArr] = useState([]);
 
@@ -27,7 +23,18 @@ function Music() {
   useEffect(() => {
     gamesComponentesReq();
   }, [])
+//.......
+const [showFlag, setShowFlag] = useState(false);
+const [clickedCard, setClickedCard] = useState({});
 
+const handleShow = (item) => {
+  setClickedCard(item);
+  setShowFlag(true);
+}
+
+const handleclose = () => {
+  setShowFlag(false);
+}
   return (
     <div className="main">
       <div className="backgroundImg">
@@ -62,7 +69,7 @@ function Music() {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="https://cdn.akamai.steamstatic.com/steam/apps/990080/ss_df93b5e8a183f7232d68be94ae78920a90de1443.600x338.jpg?t=1676412613"
+                src="https://cdn.akamai.steamstatic.com/steam/apps/1449850/header.jpg?t=1676878640"
                 alt="First slide"
               />
               <Carousel.Caption>
@@ -73,7 +80,7 @@ function Music() {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="https://cdn.akamai.steamstatic.com/steam/apps/990080/ss_df93b5e8a183f7232d68be94ae78920a90de1443.600x338.jpg?t=1676412613"
+                src="https://blog.gamesight.io/content/images/2019/08/cs-go.jpg"
                 alt="Second slide"
               />
               <Carousel.Caption>
@@ -84,7 +91,7 @@ function Music() {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="https://cdn.akamai.steamstatic.com/steam/apps/990080/ss_df93b5e8a183f7232d68be94ae78920a90de1443.600x338.jpg?t=1676412613"
+                src="https://cdn.akamai.steamstatic.com/steam/apps/2050650/header.jpg?t=1679930412"
                 alt="Third slide"
               />
               <Carousel.Caption>
@@ -98,11 +105,11 @@ function Music() {
         </div >
       </div>
 
-      <Row xs={1} md={4} className="g-4">
+      <Row xs={1} md={3} className="g-4">
         {gamesArr.map((gameCard) => {
           return <Col>
             <div>
-              <Card style={{ width: '18rem' }} className="gamescards">
+              <Card style={{ width: '18rem' }} className="gamescards" >
                 <Card.Img className="gamesimg" variant="top" src={gameCard.thumbnail} />
                 <Card.Body>
                   <Card.Title>{gameCard.title}</Card.Title>
@@ -114,8 +121,8 @@ function Music() {
                       <Button variant="dark" className="BtnCard0"><a href="https://github.com/Group04-Musicly" target="_blank" rel="noreferrer"><i className="fab fa-download"><FiDownload /></i></a></Button>
                     </div>
                     <div className="BtnCardinfo">
-                      <Button variant="outline-secondary" className="BtnCard0" >info</Button>{' '}
-                      <Button variant="outline-secondary" className="BtnCard0">🖤</Button>{' '}
+                      <Button variant="outline-secondary" className="BtnCard0"  onMouseOver={() => { handleShow(gameCard) }}  >info</Button>{' '}
+                      <Button variant="outline-secondary" className="BtnCard0" >🖤</Button>{' '}
                     </div>
                   </div>
 
@@ -125,6 +132,8 @@ function Music() {
           </Col>
         })}
       </Row>
+
+      <ModalGames showFlag={showFlag} handleclose={handleclose} clickedCard={clickedCard}></ModalGames>
     </div>
 
 
