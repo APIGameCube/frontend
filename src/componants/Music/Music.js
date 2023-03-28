@@ -7,12 +7,21 @@ import { TextField } from "@mui/material";
 import './Music.css';
 import { Col, Row, Card, Button } from "react-bootstrap";
 import { FiDownload } from "react-icons/fi";
+import { useAuth0 } from '@auth0/auth0-react';
 
 
 
 function Music() {
 
+  const { isAuthenticated } = useAuth0();
 
+  const handleClick = () => {
+    if (!isAuthenticated) {
+      alert('Please sign in first.');
+      return;
+    }
+    
+  }
 
 
   const [gamesArr, setGamesArr] = useState([]);
@@ -115,7 +124,7 @@ function Music() {
                     </div>
                     <div className="BtnCardinfo">
                       <Button variant="outline-secondary" className="BtnCard0" >info</Button>{' '}
-                      <Button variant="outline-secondary" className="BtnCard0">🖤</Button>{' '}
+                      <Button variant="outline-secondary" className="BtnCard0" onClick={handleClick}>🖤</Button>{' '}
                     </div>
                   </div>
 
