@@ -4,11 +4,11 @@ import Footer from './componants/Footer/Footer';
 import { Route, Routes } from 'react-router-dom';
 import Home from './componants/Home/Home';
 import Music from './componants/Music/Music';
-import PlayList from './componants/PlayList/PlayList';
+import PlayList from './componants/FavModal/FavModal';
 import AboutUs from './componants/AboutUs/AboutUs';
 import Login from './componants/Login/Login';
 import Profile from './componants/Login/Profile';
-import Top10 from './componants/Top10/Top10'
+import Favorite from './componants/Favorite/Favorite'
 import AllMusic from './componants/AllMusic/AllMusic'
 import './App.css';
 
@@ -26,7 +26,7 @@ function App() {
         <Route path='/AboutUs' element={<AboutUs />}></Route>
         <Route path='/Login' element={<Login />}></Route>
         <Route path='/Profile' element={<Profile />}></Route>
-        <Route path='/Top10' element={<Top10 />}></Route>
+        <Route path='/Favorite' element={<Favorite />}></Route>
         <Route path='/AllMusic' element={<AllMusic />}></Route>
       </Routes>
 
