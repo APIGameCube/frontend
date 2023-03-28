@@ -1,4 +1,4 @@
-import "../../FavModal/PlayList.css"
+import "../Cards/Cards.css"
 import { FiFacebook, FiLinkedin, FiInstagram, FiGithub } from "react-icons/fi";
 
 

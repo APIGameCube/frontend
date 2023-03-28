@@ -1,28 +1,29 @@
 import { React, useEffect, useState } from "react";
-// import List from "./Components/List"
 import Carousel from 'react-bootstrap/Carousel';
 import { Link } from 'react-router-dom';
 import { TextField } from "@mui/material";
-// import { IconName } from "react-icons/md";
-import './Music.css';
+import GameModal from "../GameModal/GameModal";
+import './Game.css'
 import { Col, Row, Card, Button } from "react-bootstrap";
 import { FiDownload } from "react-icons/fi";
 import { useAuth0 } from '@auth0/auth0-react';
 
 
-
-function Music() {
+function Game() {
 
   const { isAuthenticated } = useAuth0();
 
-  const handleClick = () => {
-    if (!isAuthenticated) {
-      alert('Please sign in first.');
-      return;
-    }
-    
+  const [showFlag, setShowFlag] = useState(false)
+  const [clickedCard, setClickedCard] = useState({});
+  const handleShow = (item) => {
+    console.log(item);
+      setClickedCard(item);
+      setShowFlag(true);
   }
 
+  const handleClose = () => {
+      setShowFlag(false);
+  }
 
   const [gamesArr, setGamesArr] = useState([]);
 
@@ -32,6 +33,7 @@ function Music() {
     const data = await resData.json();
     setGamesArr(data)
   }
+
 
   useEffect(() => {
     gamesComponentesReq();
@@ -106,10 +108,9 @@ function Music() {
           </Carousel>
         </div >
       </div>
-
       <Row xs={1} md={4} className="g-4">
         {gamesArr.map((gameCard) => {
-          return <Col>
+          return <Col key={gameCard.id}>
             <div>
               <Card style={{ width: '18rem' }} className="gamescards">
                 <Card.Img className="gamesimg" variant="top" src={gameCard.thumbnail} />
@@ -123,8 +124,8 @@ function Music() {
                       <Button variant="dark" className="BtnCard0"><a href="https://github.com/Group04-Musicly" target="_blank" rel="noreferrer"><i className="fab fa-download"><FiDownload /></i></a></Button>
                     </div>
                     <div className="BtnCardinfo">
-                      <Button variant="outline-secondary" className="BtnCard0" >info</Button>{' '}
-                      <Button variant="outline-secondary" className="BtnCard0" onClick={handleClick}>🖤</Button>{' '}
+                      <Button variant="outline-secondary" className="BtnCard0" >info</Button>
+                      {isAuthenticated && <Button variant="outline-secondary" className="BtnCard0" onClick={(item)=>handleShow(gameCard)}>🖤</Button>}
                     </div>
                   </div>
 
@@ -134,10 +135,10 @@ function Music() {
           </Col>
         })}
       </Row>
+      <GameModal showFlag={showFlag} handleClose={handleClose} cardData={clickedCard} />
+
     </div>
-
-
   );
 }
 
-export default Music;
+export default Game;

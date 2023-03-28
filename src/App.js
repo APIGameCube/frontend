@@ -3,13 +3,11 @@ import Header from './componants/Header/Header';
 import Footer from './componants/Footer/Footer';
 import { Route, Routes } from 'react-router-dom';
 import Home from './componants/Home/Home';
-import Music from './componants/Music/Music';
-import PlayList from './componants/FavModal/FavModal';
+import Game from './componants/Game/Game';
 import AboutUs from './componants/AboutUs/AboutUs';
 import Login from './componants/Login/Login';
 import Profile from './componants/Login/Profile';
 import Favorite from './componants/Favorite/Favorite'
-import AllMusic from './componants/AllMusic/AllMusic'
 
 import './App.css';
 
@@ -22,13 +20,11 @@ function App() {
 
       <Routes>
         <Route path='/' element={<Home />}></Route>
-        <Route path='/Games' element={<Music />}></Route>
-        <Route path='/Favorite' element={<PlayList />}></Route>
+        <Route path='/Games' element={<Game />}></Route>
         <Route path='/AboutUs' element={<AboutUs />}></Route>
         <Route path='/Login' element={<Login />}></Route>
         <Route path='/Profile' element={<Profile />}></Route>
         <Route path='/Favorite' element={<Favorite />}></Route>
-        <Route path='/AllMusic' element={<AllMusic />}></Route>
       </Routes>
 
       <Footer />
