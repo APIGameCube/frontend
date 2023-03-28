@@ -6,14 +6,7 @@
     flex-direction: column;
     row-gap: 20px;
 }
-.backgroundImg{
-    background-image: url('../img/23964.jpg');
-    /* height: 580px; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* background-size: cover; */
- background-repeat: no-repeat;
-}
+
 h1 {
     margin: 10px;
     font-size: 40px;
@@ -26,9 +19,11 @@ h1 {
     border-radius: 50px;
     background-color: #fffffff1;
 }
+
 .MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-fullWidth.MuiInputBase-formControl.css-md26zr-MuiInputBase-root-MuiOutlinedInput-root {
     border-radius: 50px;
 }
+
 a.titleMusic {
     font-size: 20px;
     text-decoration: none;
@@ -42,23 +37,14 @@ p {
     padding-left: 10px;
 }
 
-/* .lister-item.mode-detail>.lister-item-image {
-    display: inline-block;
-    margin-right: 15px;
-    vertical-align: top;
-} */
+
 a.link2 {
     text-decoration: none;
     color: var(--background);
     padding: 10px;
     color: white;
 }
-.TOP10{
-width: 700px;
-margin-left: 50px;
-margin-top: 50px;
-margin-bottom: 50px;
-}
+
 nav.navbar {
     background-color: var(--headerFooter);
     color: var(--text);
@@ -75,29 +61,19 @@ nav.navbar {
     box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 11%);
 }
 
-.carousel-control-next, .carousel-control-prev {
+.carousel-control-next,
+.carousel-control-prev {
     position: absolute;
-    top: 50%;
-    bottom: 50%;
-    /* padding: 10px; */
     z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* width: 20%; */
     padding: 0;
     color: #fff;
     text-align: center;
-    background: 0 0;
-    /* border: solid 1px; */
-    /* color: white; */
     padding: 15px;
     opacity: 0.5;
     transition: opacity .15s ease;
 }
+
 .g-4.row.row-cols-md-4.row-cols-1 {
-    /* display: flex; */
-    /* align-content: space-around; */
     padding: 30px;
 }
 
@@ -105,19 +81,9 @@ button.BtnCard0.btn.btn-outline-secondary {
     width: auto;
 }
 
-/* .gamesimg{
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 12%;
-    margin-bottom: 20px;
-} */
+
 .card {
-    /* position: relative; */
-    /* background: #333; */
-    /* width: 300px; */
-    /* height: 75vh; */
-    /* border-radius: 6px; */
+
     padding: 2rem;
     color: #aaa;
     box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
@@ -128,25 +94,29 @@ button.BtnCard0.btn.btn-outline-secondary {
     background-color: rgb(0 0 0);
 }
 
-.gamesimg{
+.gamesimg {
     /* width: 150px; */
     height: 150px;
     /* object-fit: cover; */
     /* border-radius: 50%; */
     margin-bottom: 20px;
 }
+
 .card-title.h5 {
     color: #d3d0d0;
 }
+
 button.BtnCard0.btn.btn-dark {
     border-block-color: black;
     background-color: black;
     width: auto;
 }
+
 i.fab.fa-download {
     color: #d3d0d0;
 
 }
+
 .BtnCard {
     display: flex;
     justify-content: space-between;
