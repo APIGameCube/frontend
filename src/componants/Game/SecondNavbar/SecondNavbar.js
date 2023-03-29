@@ -46,7 +46,7 @@ props.setInputText(e.target.search.value);
             </Form.Group></div>
 
             <div className="btnForm">
-            <Button variant="primary" type="submit" >
+            <Button variant="primary" className="searchgames" type="submit" >
             🔍 
             </Button></div>
           </Form>

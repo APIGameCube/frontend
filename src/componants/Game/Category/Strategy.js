@@ -101,7 +101,7 @@ function Strategy() {
         })}
       </Row>
       <GameModal showFlag={showFlag} handleClose={handleClose} cardData={clickedCard} />
-      <ModalGames showFlagInfo={showFlagInfo} handlecloseInfo={handleCloseInfo} cardData={clickedCard} />
+      <ModalGames showFlagInfo={showFlagInfo} handlecloseInfo={handleCloseInfo} gameCard={clickedCard} />
     </div>
   );
 }

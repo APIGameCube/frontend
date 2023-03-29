@@ -6,3 +6,220 @@
     border: solid;
     text-align: start;
 }
+
+.favback{
+    min-height: 100vh;
+}
+
+
+.BtnCard0 {
+    font-size: 20px;
+    /* margin: 100px; */
+    width: 100px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #000000;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 20px;
+}
+
+.BtnCard0:before {
+    content: '';
+    background: #111111fb;
+    background: linear-gradient(45deg, #212121, #2d302d06, #4b4f4d, #5a5e5b, #272825);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 20px;
+}
+
+.BtnCard0:active {
+    color: #00000011;
+}
+
+.BtnCard0:active:after {
+    background: transparent;
+}
+
+.BtnCard0:hover:before {
+    opacity: 1;
+}
+
+.BtnCard0:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #6a616161;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+}
+
+.BtnCard0:hover{
+    transform: translate(0, -6px);
+    box-shadow: 10px -10px 25px 0 rgba(107, 109, 106, 0.5), -10px 10px 25px 0 rgba(33, 32, 32, 0.5);
+
+
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+.BtnCard1 {
+    font-size: 20px;
+    /* margin: 100px; */
+    width: 100px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #000000;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 20px;
+}
+
+.BtnCard1:before {
+    content: '';
+    background: #111111fb;
+    background: linear-gradient(45deg, #07013050, #01035642, #0a0457, #240132, #200339);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 20px;
+}
+
+.BtnCard1:active {
+    color: #00000011;
+}
+
+.BtnCard1:active:after {
+    background: transparent;
+}
+
+.BtnCard1:hover:before {
+    opacity: 1;
+}
+
+.BtnCard1:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #6a616161;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+}
+
+.BtnCard1:hover{
+    transform: translate(0, -6px);
+    box-shadow: 10px -10px 25px 0 rgba(15, 0, 130, 0.959), -10px 10px 25px 0 rgba(108, 2, 108, 0.5);
+
+
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+.BtnCard2 {
+    font-size: 20px;
+    /* margin: 100px; */
+    width: 100px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #000000;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 20px;
+}
+
+.BtnCard2:before {
+    content: '';
+    background: #111111fb;
+    background: linear-gradient(45deg, rgb(96, 3, 3), #56012242, #310124, #4f0343, #580707);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 20px;
+}
+
+.BtnCard2:active {
+    color: #00000011;
+}
+
+.BtnCard2:active:after {
+    background: transparent;
+}
+
+.BtnCard2:hover:before {
+    opacity: 1;
+}
+
+.BtnCard2:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #6a616161;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+}
+
+.BtnCard2:hover{
+    transform: translate(0, -6px);
+    box-shadow: 10px -10px 25px 0 rgba(95, 7, 7, 0.959) -10px 10px 25px 0 rgba(97, 8, 54, 0.5);
+
+
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
