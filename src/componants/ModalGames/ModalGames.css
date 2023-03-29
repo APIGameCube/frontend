@@ -1,0 +1,15 @@
+.cardIMG {
+    display: flex;
+}
+.cardP {
+    padding-top: 20px;
+}
+.modal-content {
+    background-color: rgba(34, 54, 74);
+    color: white;
+}
+a.btn.btn-primary {
+    background-color: black;
+    color: white;
+    border-block-color: black;
+}

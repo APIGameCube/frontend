@@ -13,13 +13,6 @@ h1 {
     color: rgb(1, 1, 59);
 }
 
-.search {
-    margin-top: 10px;
-    width: 30%;
-    border-radius: 50px;
-    background-color: #fffffff1;
-}
-
 .MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-fullWidth.MuiInputBase-formControl.css-md26zr-MuiInputBase-root-MuiOutlinedInput-root {
     border-radius: 50px;
 }
@@ -37,29 +30,6 @@ p {
     padding-left: 10px;
 }
 
-
-a.link2 {
-    text-decoration: none;
-    color: var(--background);
-    padding: 10px;
-    color: white;
-}
-
-nav.navbar {
-    background-color: var(--headerFooter);
-    color: var(--text);
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    position: sticky;
-    top: -5px;
-    z-index: 2;
-    height: 90px;
-    min-height: 70px;
-    background-color: #00000061;
-    padding: 0 1rem;
-    box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 11%);
-}
 
 .carousel-control-next,
 .carousel-control-prev {
@@ -121,3 +91,90 @@ i.fab.fa-download {
     display: flex;
     justify-content: space-between;
 }
+a.BtnCard0.btn.btn-dark {
+    background-color: black;
+    width: auto;
+    border-block-color: black;
+}
+.gamescards.card {
+    margin: 40px;
+}
+.carousel.slide.carousel-dark {
+    height: 500px;
+    width: 1100px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+img.d-block.w-100 {
+    height: 500px;
+}
+img.d-bloc {
+    margin-top: 40px;
+    margin-left: 100px;
+}
+p.pExp {
+    /* margin: 50px; */
+    margin-top: 100px;
+    padding-left: 50px;
+    color: white;
+    /* size: 3px; */
+    font-size: 20px;
+}
+p.pExp2 {
+    /* margin-top: 100px; */
+    padding-left: 50px;
+    color: white;
+    /* size: 3px; */
+    font-size: 20px;
+}
+.TOP10 {
+    display: flex;
+}
+
+
+nav.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+a.link2 {
+    margin: 10px;
+}
+form {
+    margin-right: 40px;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .pagination li {
+    list-style: none;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .pagination a {
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .pagination a:hover {
+    background-color: #f01e3a;
+    color: #fff;
+  }
+  
+  .pagination a.active {
+    background-color: #f01e3a;
+    color: #fff;
+  }
+  
+ 
+  
