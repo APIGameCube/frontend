@@ -1,0 +1,52 @@
+.favmodhead{
+    background: hwb(0 11% 88%);
+}
+
+.favmodimg{
+    background: hwb(0 11% 88%);
+    border-radius: 30px;
+}
+
+.favmodfooter{
+    background: hwb(0 11% 88%);
+}
+
+.titlefavhead{
+    color: azure;
+}
+
+.addcomment{
+    color: azure;
+}
+
+.favmodbody{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: #0f0e0e;
+
+}
+
+.closefavmod{
+    box-shadow: 0 0 5px #811313;
+    background-color: #2f1717;
+
+}
+
+
+.closefavmod:hover{
+    box-shadow: 0 0 5px #811313, 0 0 10px #811313, 0 0 30px #811313, 0 0 60px #811313, 0 0 100px #811313;
+}
+
+.addcommentfavmod{
+    box-shadow: 0 0 5px #1414cd;
+    background-color: #121425;
+
+}
+
+
+.addcommentfavmod:hover{
+    box-shadow: 0 0 5px #1414cd, 0 0 10px #1414cd, 0 0 30px #1414cd, 0 0 60px #1414cd, 0 0 100px #1414cd;
+}

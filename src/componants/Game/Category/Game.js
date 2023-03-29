@@ -176,8 +176,8 @@ function Game(props) {
 
         />
          </div>
-      <GameModal showFlag={showFlag} handleClose={handleClose} cardData={clickedCard} />
-      <ModalGames showFlagInfo={showFlagInfo} handlecloseInfo={handleCloseInfo} cardData={clickedCard} />
+      <GameModal showFlag={showFlag} handleClose={handleClose} gameCard={clickedCard} />
+      <ModalGames showFlagInfo={showFlagInfo} handlecloseInfo={handleCloseInfo} gameCard={clickedCard} />
       {/* <Favorite showFlag={showFlag} handleClose={handleClose} cardData={clickedCard} /> */ }
 
     </div >
