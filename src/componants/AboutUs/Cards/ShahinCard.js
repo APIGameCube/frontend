@@ -1,5 +1,4 @@
 
-import "../../FavModal/PlayList.css"
 
 
 import { FiFacebook, FiLinkedin, FiInstagram, FiGithub } from "react-icons/fi";

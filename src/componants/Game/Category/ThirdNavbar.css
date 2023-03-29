@@ -1,0 +1,15 @@
+nav.navbar3 {
+    background-color: var(--headerFooter);
+    color: var(--text);
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    position: sticky;
+    top: -5px;
+    z-index: 2;
+    height: 90px;
+    min-height: 70px;
+    background-color: #00000061;
+    padding: 0 1rem;
+    box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 11%);
+}

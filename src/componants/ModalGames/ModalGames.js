@@ -7,15 +7,12 @@ import './ModalGames.css';
 
 function ModalGames(props) {
 
-  const [comment, setComment] = useState('');
-  const handleComment = (e) => {
-    setComment(e.target.value);
-  }
+
   const insertMovie = async (e) => {
     try {
       e.preventDefault();
       const obj = {
-        title: props.clickedCard.title
+        title: props.cardData.title
       }
       const serverURl = `https://backend-black-nu.vercel.app/allGame`;
       const resData = await fetch(serverURl);
@@ -28,20 +25,26 @@ function ModalGames(props) {
   }
 
   return (
-    <Modal show={props.showFlag} onHide={props.handleclose}>
-      <Modal.Header closeButton>
-        <Modal.Title>{props.clickedCard.title}</Modal.Title>
+    
+    <Modal show={props.showFlagInfo} onHide={props.handlecloseInfo} onMouseLeave={props.handlecloseInfo}>
+      <Modal.Header  closeButton>
+        <Modal.Title>{props.cardData.title}</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        {/* <Image src={`https://image.tmdb.org/t/p/w500${props.clickedCard.poster_path}`} width='100%' /> */}
-        
-        {/* <p>{props.clickedCard.overview}</p> */}
+        <div className='cardIMG'><Image src={props.cardData.thumbnail} width='100%' />
+        <div className='cardP'>
+        <p>Date: {props.cardData.release_date}</p>
+        <p>Genre: {props.cardData.genre}</p>
+        <p>You can only play it on the: {props.cardData.platform}</p>
+        </div>
+        </div>
+        <p>{props.cardData.short_description}</p>
+
         <Form onSubmit={insertMovie}>
           <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Control name="comment" type="text" onChange={handleComment} placeholder="Write your comment here" />
           </Form.Group>
-          <Button variant="primary" type="submit" onClick={props.handleclose}>
-            Add to the favorite
+          <Button variant="primary" onClick={props.handlecloseInfo} href={props.cardData.freetogame_profile_url} target="_blank">
+            Read More
           </Button>
         </Form>
 
