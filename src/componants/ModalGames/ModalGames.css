@@ -13,3 +13,13 @@ a.btn.btn-primary {
     color: white;
     border-block-color: black;
 }
+
+.readmore{
+    box-shadow: 0 0 5px #1414cd;
+    background-color: #121425;
+}
+
+.readmore:hover{
+    box-shadow: 0 0 5px #1414cd, 0 0 10px #1414cd, 0 0 30px #1414cd, 0 0 60px #1414cd, 0 0 100px #1414cd;
+
+}

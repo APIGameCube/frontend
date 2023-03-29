@@ -2,10 +2,32 @@ import Button from 'react-bootstrap/Button';
 import "../Home/Home.css"
 import { useAuth0 } from "@auth0/auth0-react";
 import "../button/home-btn.css"
+import axios from 'axios';
+import { useEffect } from 'react';
+
+
 
 function Home() {
+    const { user, isAuthenticated } = useAuth0();
 
-    const { isAuthenticated } = useAuth0();
+    const sendRequest = async () => {
+        const obj = {
+            name: user.name,
+            email: user.email,
+            nickname: user.nickname,
+            birthdate: user.birthdate
+        }
+
+        const serverURL = "https://backend-production-8a11.up.railway.app/user";
+        await axios.post( serverURL , obj);
+
+    }
+
+
+    useEffect(() => {
+        sendRequest()
+    }, []);
+ 
 
     return (
         <>
@@ -13,7 +35,7 @@ function Home() {
             <div className='banner2'>
                 <div className='bannerstexts'>
                     <p className='hometext'>amuse your day and make some noise free your self and enjoy your life</p>
-                    <Button className='btn-Fav' href='/music'>Browse games</Button>
+                    <Button className='btn-Fav' variant='Secondary' href='/music'>Browse games</Button>
                 </div>
             </div>
 
@@ -33,7 +55,7 @@ function Home() {
             <div className='banner3'>
                 <div className='bannerstexts'>
                     <p className='hometext'>Read more about us</p>
-                    <Button className='btn-Fav' href='/AboutUs'>About us</Button>
+                    <Button className='btn-Fav' variant='Secondary' href='/AboutUs'>About us</Button>
                 </div>
             </div>
         </>
@@ -41,4 +63,3 @@ function Home() {
 }
 
 export default Home;
-

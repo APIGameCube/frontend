@@ -7,15 +7,17 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import UpdateModal from '../U-D-modals/UpdateModal';
 import DeleteModal from '../U-D-modals/DeleteModal';
+import { useAuth0 } from '@auth0/auth0-react';
 
 
 
 function Favorite() {
 
+  const {user} = useAuth0();
 
   const [favoriteArray, setFavoriteArray] = useState([]);
   const sendReq = async () => {
-    const serverURL = `https://backend-production-8a11.up.railway.app/allFavGame`;
+    const serverURL = `https://backend-production-8a11.up.railway.app/allFavGame/${user.id}`;
     const response = await fetch(serverURL);
     const data = await response.json();
     console.log(data);

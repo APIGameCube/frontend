@@ -91,7 +91,7 @@ function MMO() {
                       <Button variant="dark" className="BtnCard0" href={gameCard.game_url} target="_blank"><a target="_blank" rel="noreferrer"><i className="fab fa-download"><FiDownload /></i></a></Button>
                     </div>
                     <div className="BtnCardinfo">
-                      <Button variant="outline-secondary" className="BtnCard0" onMouseOver={() => { handleShowInfo(gameCard) }} >info</Button>{' '}
+                      <Button variant="outline-secondary" className="BtnCard0" onMouseOver={() => { handleShowInfo(gameCard) }} >More</Button>{' '}
                       {isAuthenticated && <Button variant="outline-secondary" className="BtnCard0" onClick={(item) => handleShow(gameCard)}>🖤</Button>}
                     </div>
                   </div>

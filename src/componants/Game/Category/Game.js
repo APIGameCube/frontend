@@ -6,7 +6,7 @@ import GameModal from "../../GameModal/GameModal";
 import { Col, Row, Card, Button } from "react-bootstrap";
 import { FiDownload } from "react-icons/fi";
 import { useAuth0 } from '@auth0/auth0-react';
-import Favorite from "../../Favorite/Favorite";
+import "../../Favorite/Favorite.css";
 import ModalGames from "../../ModalGames/ModalGames";
 import SecondNavbar from "../SecondNavbar/SecondNavbar";
 import ReactPaginate from 'react-paginate';
@@ -153,8 +153,8 @@ function Game(props) {
                       <Button variant="dark" className="BtnCard0" href={gameCard.game_url} target="_blank"><a target="_blank" rel="noreferrer"><i className="fab fa-download"><FiDownload /></i></a></Button>
                     </div>
                     <div className="BtnCardinfo">
-                      <Button variant="outline-secondary" className="BtnCard0" onMouseOver={() => { handleShowInfo(gameCard) }} >info</Button>{' '}
-                      {isAuthenticated && <Button variant="outline-secondary" className="BtnCard0" onClick={(item) => handleShow(gameCard)}>🖤</Button>}
+                      <Button variant="outline-secondary" className="BtnCard1" onMouseOver={() => { handleShowInfo(gameCard) }} >More</Button>{' '}
+                      {isAuthenticated && <Button variant="danger" className="BtnCard2" onClick={(item) => handleShow(gameCard)}>🖤</Button>}
                     </div>
                   </div>
 

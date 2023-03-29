@@ -11,11 +11,17 @@
     min-height: 100vh;
 }
 
+.BtnCardinfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
 
 .BtnCard0 {
     font-size: 20px;
     /* margin: 100px; */
-    width: 100px;
+    width: 80px;
     height: 50px;
     border: none;
     outline: none;
@@ -26,6 +32,7 @@
     z-index: 0;
     border-radius: 20px;
 }
+
 
 .BtnCard0:before {
     content: '';
@@ -86,7 +93,7 @@
 .BtnCard1 {
     font-size: 20px;
     /* margin: 100px; */
-    width: 100px;
+    width: 80px;
     height: 50px;
     border: none;
     outline: none;
@@ -157,7 +164,7 @@
 .BtnCard2 {
     font-size: 20px;
     /* margin: 100px; */
-    width: 100px;
+    width: 80px;
     height: 50px;
     border: none;
     outline: none;
