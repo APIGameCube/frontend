@@ -90,6 +90,8 @@ i.fab.fa-download {
 .BtnCard {
     display: flex;
     justify-content: space-between;
+   
+    
 }
 a.BtnCard0.btn.btn-dark {
     background-color: black;

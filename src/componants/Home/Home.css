@@ -69,3 +69,82 @@
     /* border: 3px solid #0000001f; */
     transition: .4s all ease;
 }
+
+.btn-Fav {
+    font-size: 30px;
+    margin: 100px;
+    width: 400px;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #4a4545a3;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 40px;
+}
+
+
+
+.btn-Fav:before {
+    content: '';
+    background: #1111112f;
+    background: linear-gradient(45deg, #07013050, #01035642, #0a0457, #240132, #200339);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 40px;
+}
+
+.btn-Fav:active {
+    color: #00000026;
+}
+
+.btn-Fav:active:after {
+    background: transparent;
+}
+
+.btn-Fav:hover:before {
+    opacity: 1;
+}
+
+
+.btn-Fav:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #1111112e;
+    left: 0;
+    top: 0;
+    border-radius: 40px;
+}
+
+.btn-Fav:hover{
+    transform: translate(0, -6px);
+    box-shadow: 10px -10px 25px 0 rgba(15, 0, 130, 0.959), -10px 10px 25px 0 rgba(108, 2, 108, 0.5);
+
+
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+

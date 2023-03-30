@@ -43,7 +43,7 @@ function ModalGames(props) {
         <Form onSubmit={insertMovie}>
           <Form.Group className="mb-3" controlId="formBasicPassword">
           </Form.Group>
-          <Button variant="primary" onClick={props.handlecloseInfo} href={props.gameCard.freetogame_profile_url} target="_blank">
+          <Button variant="primary" className='readmore' onClick={props.handlecloseInfo} href={props.gameCard.freetogame_profile_url} target="_blank">
             Read More
           </Button>
         </Form>
