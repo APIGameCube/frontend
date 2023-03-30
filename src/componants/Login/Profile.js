@@ -23,8 +23,8 @@ function Profile() {
                 {isAuthenticated && (
                     <article className='column'>
                         {user?.picture && <img className='loginimg' src={user.picture} alt={user?.name} />}
-                        <h2>{user?.name}</h2>
-                        <ul>{renderUserInfo()}</ul>
+                        <h2 className='profilesize'>{user?.name}</h2>
+                        <ul className='profilesize'>{renderUserInfo()}</ul>
                     </article>
 
                 )}

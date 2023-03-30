@@ -4,12 +4,17 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 80vh;
+    height: 80vh;
     padding: 20px;
     color: azure;
     background: linear-gradient(90deg, rgba(0,0,255,1) 0%, rgba(153,33,33,0.7613096263896184) 0%, rgba(27,108,123,1) 100%);
     border-radius: 10px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.profilesize{
+    font-size: larger;
 }
 
 h2 {
@@ -19,10 +24,10 @@ h2 {
 }
 
 .loginimg {
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 30%;
     margin-bottom: 20px;
 }
 

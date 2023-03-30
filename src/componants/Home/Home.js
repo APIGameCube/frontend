@@ -37,8 +37,8 @@ function Home() {
 
             <div className='banner2'>
                 <div className='bannerstexts'>
-                    <p className='hometext'>amuse your day and make some noise free your self and enjoy your life</p>
-                    <Button className='btn-Fav' variant='Secondary' href='/music'>Browse games</Button>
+                    <p className='hometext'>Get ready to immerse yourself in an epic gaming journey like no other, where every level is a new adventure and every challenge is a chance to prove yourself</p>
+                    <Button className='btn-Fav' variant='Secondary' href='/games'>Browse games</Button>
                 </div>
             </div>
 
