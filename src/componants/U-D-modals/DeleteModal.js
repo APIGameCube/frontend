@@ -8,6 +8,7 @@ import Image from 'react-bootstrap/Image';
 
 
 
+
 function DeleteModal(props) {
   const deleteGame = async (e) => {
 
@@ -31,7 +32,7 @@ function DeleteModal(props) {
 
       </Modal.Body>
       <Modal.Footer>
-        <Button variant="secondary" type="submit" onClick={deleteGame}>
+        <Button calssName="Delete-btn" variant="Danger" type="submit" onClick={deleteGame}>
           Delete this movie
         </Button>
         <Button variant="secondary" onClick={props.closeDeleteModal}>

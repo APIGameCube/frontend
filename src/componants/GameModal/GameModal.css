@@ -29,18 +29,177 @@
 
 }
 
-.closefavmod{
-    box-shadow: 0 0 5px #811313;
-    background-color: #2f1717;
 
+
+.closefavmod {
+    font-size: 20px;
+    /* margin: 100px; */
+    width: 100px;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #4a4545a3;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 20px;
 }
 
+
+
+.closefavmod:before {
+    content: '';
+    background: #1111112f;
+    background: linear-gradient(45deg, #00000050, #2C3E50, #434069, #2C3E50, #00000050);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 20px;
+}
+
+.closefavmod:active {
+    color: #00000026;
+}
+
+.closefavmod:active:after {
+    background: transparent;
+}
+
+.closefavmod:hover:before {
+    opacity: 1;
+}
+
+
+.closefavmod:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #1111112e;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+}
 
 .closefavmod:hover{
-    box-shadow: 0 0 5px #811313, 0 0 10px #811313, 0 0 30px #811313, 0 0 60px #811313, 0 0 100px #811313;
+    transform: translate(0, -6px);
+    box-shadow: 10px -10px 25px 0 #133987, -10px 10px 25px 0 #6C87Be;
+
+
 }
 
-.addcommentfavmod{
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+
+
+
+
+
+
+
+
+.addcommentfavmod {
+    font-size: 20px;
+    /* margin: 100px; */
+    width: 150px;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #4a4545a3;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 20px;
+}
+
+
+
+.addcommentfavmod:before {
+    content: '';
+    background: #1111112f;
+    background: linear-gradient(45deg, #133987, #6C87Be, #8c00f7, #6C87Be, #133987);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 20px;
+}
+
+.addcommentfavmod:active {
+    color: #00000026;
+}
+
+.addcommentfavmod:active:after {
+    background: transparent;
+}
+
+.addcommentfavmod:hover:before {
+    opacity: 1;
+}
+
+
+.addcommentfavmod:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #1111112e;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+}
+
+.addcommentfavmod:hover{
+    transform: translate(0, -6px);
+    box-shadow: 10px -10px 25px 0 #00000050, -10px 10px 25px 0 #021a31;
+
+
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+
+
+/* .addcommentfavmod{
     box-shadow: 0 0 5px #1414cd;
     background-color: #121425;
 
@@ -49,4 +208,4 @@
 
 .addcommentfavmod:hover{
     box-shadow: 0 0 5px #1414cd, 0 0 10px #1414cd, 0 0 30px #1414cd, 0 0 60px #1414cd, 0 0 100px #1414cd;
-}
+} */

@@ -17,7 +17,7 @@ function Favorite() {
 
   const [favoriteArray, setFavoriteArray] = useState([]);
   const sendReq = async () => {
-    const serverURL = `https://backend-production-8a11.up.railway.app/allFavGame/${user.id}`;
+    const serverURL = `https://backend-production-8a11.up.railway.app/allFavGame/${user.email}`;
     const response = await fetch(serverURL);
     const data = await response.json();
     console.log(data);
@@ -88,9 +88,9 @@ function Favorite() {
                 <Card.Title>{item.title}</Card.Title>
                 <Card.Text>{item.comment}</Card.Text>
 
-                <Button variant="primary" className='BtnCard0' href={item.game_url}> more </Button>
-                <Button variant="primary" className='BtnCard1' onClick={() => { showUpdateModal(item) }}> Update</Button>
-                <Button variant="primary" className='BtnCard2' onClick={() => { showDeleteModal(item) }}> Delete</Button>
+                {/* <Button variant="Light" className='BtnCard0' href={item.game_url}> more </Button> */}
+                <Button variant="Success" className='BtnCard1-fav' onClick={() => { showUpdateModal(item) }}> Update</Button>
+                <Button variant="Danger" className='BtnCard2' onClick={() => { showDeleteModal(item) }}> Delete</Button>
 
               </Card.Body>
             </Card>

@@ -16,14 +16,14 @@ props.setInputText(e.target.search.value);
         <nav className="navbar">
           <div >
           <Link to="/Games" className="link2">All Genres</Link>
-          <Link to="/BattelRoyal" className="link2">Battle Royale</Link>
-          <Link to="/Fighting" className="link2">Fighting </Link>
+          <Link to="/battelRoyal" className="link2">Battle Royale</Link>
+          <Link to="/fighting" className="link2">Fighting </Link>
           <Link to="/MMORPG" className="link2">MMORPG </Link>
           <Link to="/MOBA" className="link2">MOBA </Link>
-          <Link to="/Shooter" className="link2">Shooter </Link>
-          <Link to="/Sports" className="link2">Sports</Link>
-          <Link to="/Strategy" className="link2">Strategy </Link>
-          <Link to="/Racing" className="link2">Racing </Link>
+          <Link to="/shooter" className="link2">Shooter </Link>
+          <Link to="/sports" className="link2">Sports</Link>
+          <Link to="/strategy" className="link2">Strategy </Link>
+          <Link to="/racing" className="link2">Racing </Link>
           </div>
           {/* <Link to="/MMO" className="link2">MMO </Link> */}
           

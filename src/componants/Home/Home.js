@@ -7,27 +7,30 @@ import { useEffect } from 'react';
 
 
 
+
 function Home() {
     const { user, isAuthenticated } = useAuth0();
-
+    
     const sendRequest = async () => {
         const obj = {
-            name: user.name,
             email: user.email,
-            nickname: user.nickname,
-            birthdate: user.birthdate
+            name: user.name,
+            picture: user.picture,
+            birthday: "user.birthday"
         }
 
+        console.log(obj);
+
         const serverURL = "https://backend-production-8a11.up.railway.app/user";
-        await axios.post( serverURL , obj);
+        await axios.post(serverURL, JSON.stringify(obj));
 
     }
 
 
-    useEffect(() => {
-        sendRequest()
-    }, []);
- 
+    // useEffect(() => {
+    //     sendRequest()
+    // }, []);
+
 
     return (
         <>
