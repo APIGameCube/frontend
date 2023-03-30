@@ -104,7 +104,7 @@ function BattelRoyal() {
         })}
       </Row>
       
-      <GameModal showFlag={showFlag} handleClose={handleClose} cardData={clickedCard} />
+      <GameModal showFlag={showFlag} handleClose={handleClose} gameCard={clickedCard} />
       <ModalGames showFlagInfo={showFlagInfo} handlecloseInfo={handleCloseInfo} gameCard={clickedCard} />
     </div>
   );

@@ -33,7 +33,7 @@ function DeleteModal(props) {
       </Modal.Body>
       <Modal.Footer>
         <Button calssName="Delete-btn" variant="Danger" type="submit" onClick={deleteGame}>
-          Delete this movie
+          Delete this game
         </Button>
         <Button variant="secondary" onClick={props.closeDeleteModal}>
           Close
