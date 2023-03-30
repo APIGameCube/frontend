@@ -4,9 +4,14 @@ import { useState } from "react";
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal'
 import "../GameModal/GameModal.css"
+import { useAuth0 } from "@auth0/auth0-react";
+
 function GameModal(props) {
 
+  const { user, isAuthenticated } = useAuth0();
+
   const [addFeedBack, setAddComment] = useState('');
+  
   function handleCommment(event) {
     setAddComment(event.target.value);
   }
@@ -17,6 +22,7 @@ function GameModal(props) {
       method: 'POST',
 
       body: JSON.stringify({
+        email : user.email,
         title: props.gameCard.title,
         thumbnail: props.gameCard.thumbnail,
         genre: props.gameCard.genre,
@@ -49,10 +55,10 @@ function GameModal(props) {
           </div>
         </Modal.Body>
         <Modal.Footer className="favmodfooter">
-          <Button className="closefavmod" variant="secondary" onClick={props.handleClose}>
+          <Button className="closefavmod" variant="Dark" onClick={props.handleClose}>
             Close
           </Button>
-          <Button className="addcommentfavmod" variant="primary" onClick={() => {
+          <Button className="addcommentfavmod" variant="Primary" onClick={() => {
             console.log(`${props.gameCard.title}`)
             fetchRes()
             props.handleClose()

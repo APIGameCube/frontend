@@ -83,19 +83,19 @@ function Game(props) {
 
   return (
     <div className="main">
-      <div  style={{backgroundColor: '#090c22', paddingBottom: '50px'}} >
+      <div style={{ backgroundColor: '#090c22', paddingBottom: '50px' }} >
         <SecondNavbar inputText={inputText} setInputText={setInputText} />
         {/* <List /> */}
 
         <div className="TOP10">
-            <Carousel variant="dark">
+          <Carousel variant="dark">
             <Carousel.Item>
               <div className="imgback">
-              <img
-                className="d-block w-100"
-                src="https://static-prod-web.miniclip.com/assets/news/17_PR_SYBO.jpg"
-                alt="First slide"
-              />
+                <img
+                  className="d-block w-100"
+                  src="https://static-prod-web.miniclip.com/assets/news/17_PR_SYBO.jpg"
+                  alt="First slide"
+                />
               </div>
               <Carousel.Caption>
                 {/* <h5>First slide label</h5> */}
@@ -126,14 +126,14 @@ function Game(props) {
             </Carousel.Item>
           </Carousel>
           <div className="pImg">
-          <p className="pExp">Explore the ultimate gaming universe </p>  
-          <p className="pExp2">with us</p>      
-          <img
-                className="d-bloc"
-                src="https://i.gifer.com/AQQY.gif"
-                alt="Third slide"
-              />
-              </div>
+            <p className="pExp">Explore the ultimate gaming universe </p>
+            <p className="pExp2">with us</p>
+            <img
+              className="d-bloc"
+              src="https://i.gifer.com/AQQY.gif"
+              alt="Third slide"
+            />
+          </div>
         </div >
       </div>
 
@@ -175,10 +175,10 @@ function Game(props) {
           activeClassName={'active'}
 
         />
-         </div>
+      </div>
       <GameModal showFlag={showFlag} handleClose={handleClose} gameCard={clickedCard} />
       <ModalGames showFlagInfo={showFlagInfo} handlecloseInfo={handleCloseInfo} gameCard={clickedCard} />
-      {/* <Favorite showFlag={showFlag} handleClose={handleClose} cardData={clickedCard} /> */ }
+      {/* <Favorite showFlag={showFlag} handleClose={handleClose} cardData={clickedCard} /> */}
 
     </div >
   );

@@ -37,7 +37,7 @@
 .BtnCard0:before {
     content: '';
     background: #111111fb;
-    background: linear-gradient(45deg, #212121, #2d302d06, #4b4f4d, #5a5e5b, #272825);
+    background: linear-gradient(45deg, #0A1334, #14202E, #2D4356, #14202E, #0A1334);
     position: absolute;
     top: -2px;
     left:-2px;
@@ -78,7 +78,7 @@
 
 .BtnCard0:hover{
     transform: translate(0, -6px);
-    box-shadow: 10px -10px 25px 0 rgba(107, 109, 106, 0.5), -10px 10px 25px 0 rgba(33, 32, 32, 0.5);
+    box-shadow: 10px -10px 25px 0 #14202E, -10px 10px 25px 0 #0A1334;
 
 
 }
@@ -90,7 +90,7 @@
 }
 
 
-.BtnCard1 {
+.BtnCard1-fav {
     font-size: 20px;
     /* margin: 100px; */
     width: 80px;
@@ -105,10 +105,10 @@
     border-radius: 20px;
 }
 
-.BtnCard1:before {
+.BtnCard1-fav:before {
     content: '';
     background: #111111fb;
-    background: linear-gradient(45deg, #07013050, #01035642, #0a0457, #240132, #200339);
+    background: linear-gradient(45deg, #194b01, #1b8201, #0a7500, #357200, #236a02);
     position: absolute;
     top: -2px;
     left:-2px;
@@ -123,19 +123,19 @@
     border-radius: 20px;
 }
 
-.BtnCard1:active {
+.BtnCard1-fav:active {
     color: #00000011;
 }
 
-.BtnCard1:active:after {
+.BtnCard1-fav:active:after {
     background: transparent;
 }
 
-.BtnCard1:hover:before {
+.BtnCard1-fav:hover:before {
     opacity: 1;
 }
 
-.BtnCard1:after {
+.BtnCard1-fav:after {
     z-index: -1;
     content: '';
     position: absolute;
@@ -147,9 +147,9 @@
     border-radius: 20px;
 }
 
-.BtnCard1:hover{
+.BtnCard1-fav:hover{
     transform: translate(0, -6px);
-    box-shadow: 10px -10px 25px 0 rgba(15, 0, 130, 0.959), -10px 10px 25px 0 rgba(108, 2, 108, 0.5);
+    box-shadow: 10px -10px 25px 0 #075d4c, -10px 10px 25px 0 #F4D03F;
 
 
 }
@@ -159,6 +159,11 @@
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
 }
+
+button.BtnCard1-fav.btn.btn-Success {
+    margin-right: 20px;
+}
+
 
 
 .BtnCard2 {
@@ -179,7 +184,7 @@
 .BtnCard2:before {
     content: '';
     background: #111111fb;
-    background: linear-gradient(45deg, rgb(96, 3, 3), #56012242, #310124, #4f0343, #580707);
+    background: linear-gradient(45deg, rgb(45, 2, 2), #630118, #fe0101, #72001b, #770303);
     position: absolute;
     top: -2px;
     left:-2px;
@@ -220,7 +225,7 @@
 
 .BtnCard2:hover{
     transform: translate(0, -6px);
-    box-shadow: 10px -10px 25px 0 rgba(95, 7, 7, 0.959) -10px 10px 25px 0 rgba(97, 8, 54, 0.5);
+    box-shadow: 10px -10px 25px 0 rgba(96, 1, 1, 0.959) -10px 10px 25px 0 rgba(125, 44, 1, 0.5);
 
 
 }
@@ -230,3 +235,8 @@
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
 }
+
+
+
+
+/* (45deg, rgb(57, 1, 1), #771D32, #E65758, #771D32, #440101); */
